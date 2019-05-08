@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Card Checkout</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Checkout</h1>
+    <form>
+        <fieldset class="f-cards">
+          <ul class="cards">
+            <li class="card">
+              <label for="visa">
+                <input type="radio" name="brand" value="visa">
+                <img src="images/visa.png" alt="visa icon">
+              </label>
+            </li>
+            <li class="card">
+              <label for="mastercard">
+                <input type="radio" name="brand" value="mastercard">
+                <img src="images/mastercard.png" alt="mastercard icon">
+              </label>            
+            </li>
+            <li class="card">
+              <label for="american-express">
+                <input type="radio" name="brand" value="american-express">
+                <img src="images/american-express.png" alt="american-express icon">
+              </label>            
+            </li>
+            <li class="card">
+              <label for="paypal">
+                <input type="radio" name="brand" value="paypal">
+                <img src="images/paypal.png" alt="paypal icon">
+              </label>           
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="f-data">
+          <label for="card-name">Cardholder Name</label>
+          <input type="text" name="card-name" placeholder="John Doe" required>
+
+          <label for="card-number">Card Number</label>
+          <input type="number" name="card-number" placeholder="9483 2916 3900 3817" required>
+
+          <label for="expiry">Expiry Month</label>
+          <input type="month" name="expiry" required>
+
+          <label for="ccv">CCV</label>
+          <input type="number" name="ccv" maxlength="3" max="999" required>
+        </fieldset> 
+        <input type="submit" value="Checkout">      
+    </form>
+  </div>
+</body>
+</html>

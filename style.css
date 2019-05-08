@@ -1,0 +1,58 @@
+:root {
+  --dark-blue: #0B2545;
+  --medium-blue: #13315C;
+  --blue: #134074;
+  --light-blue: #8DA9C4;
+  --beige: #F4EAD0;
+}
+
+.container {
+  display: relative;
+  /* margin: 200px 0; */
+  width: 100vw;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 10px;
+  background: var(--beige);
+}
+
+fieldset {
+  border: none;
+}
+
+/* Cards */
+
+.cards {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: inline-block;
+}
+
+.card img {
+  width: 50px;
+}
+
+/* Card Data */
+
+.f-data label, .f-data input {
+  display: block;
+}
+
+.f-data input{
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
