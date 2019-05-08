@@ -14,6 +14,7 @@
   padding: 30px;
   border-radius: 10px;
   background: var(--beige);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 fieldset {
@@ -43,11 +44,22 @@ fieldset {
   display: block;
 }
 
+.f-data label {
+  margin-bottom: 2px;
+}
+
 .f-data input{
-  margin: 10px auto;
+  margin-bottom: 20px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid lightgrey;
+}
+
+input[type="submit"] {
+  background: var(--light-blue);
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
